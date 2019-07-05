@@ -1,4 +1,11 @@
 package com.lucas.springdemo;
 
-public class BaseballCoach {
+import com.lucas.springdemo.interfaces.Coach;
+
+public class BaseballCoach implements Coach {
+
+    @Override
+    public String getDailyWorkout() {
+        return "Spend 30 minutes on batting practice";
+    }
 }
