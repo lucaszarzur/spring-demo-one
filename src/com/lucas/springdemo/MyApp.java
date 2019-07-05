@@ -9,7 +9,7 @@ public class MyApp {
         //problem here -> this code is still hardcoded :(
 
         //create the object
-        Coach theCoach = new BaseballCoach();
+        Coach theCoach = new TrackCoach();
 
         //use the object
         System.out.println(theCoach.getDailyWorkout());
