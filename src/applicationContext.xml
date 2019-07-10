@@ -10,7 +10,7 @@
     <!-- Define your beans here -->
 
     <!-- define the dependency-->
-    <bean id = "myFortuneService" class = "com.lucas.springdemo.service.HappyFortuneService">
+    <bean id = "myFortuneService" class = "com.lucas.springdemo.service.impl.HappyFortuneService">
     </bean>
 
     <bean id = "myCoach" class = "com.lucas.springdemo.TrackCoach">
