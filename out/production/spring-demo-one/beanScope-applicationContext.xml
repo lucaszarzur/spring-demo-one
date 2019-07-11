@@ -13,6 +13,7 @@
     <bean id = "myFortuneService" class = "com.lucas.springdemo.service.impl.HappyFortuneService">
     </bean>
 
+    <!-- scope: prototype. For the scope "singleton, just delete the scope declaration."-->
     <bean id = "myCoach" class = "com.lucas.springdemo.TrackCoach" scope="prototype">
 
         <!-- set up constructor injection -->

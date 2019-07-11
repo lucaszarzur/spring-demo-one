@@ -13,8 +13,9 @@
     <bean id = "myFortuneService" class = "com.lucas.springdemo.service.impl.HappyFortuneService">
     </bean>
 
-    <!-- scope: prototype. For the scope "singleton, just delete the scope declaration."-->
-    <bean id = "myCoach" class = "com.lucas.springdemo.TrackCoach" scope="prototype">
+    <bean id = "myCoach" class = "com.lucas.springdemo.TrackCoach"
+    init-method="doMyStartupStuff"
+    destroy-method="doMyCleanupStuffYoYo">
 
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortuneService" />
