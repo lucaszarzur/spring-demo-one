@@ -13,7 +13,7 @@
     <bean id = "myFortuneService" class = "com.lucas.springdemo.service.impl.HappyFortuneService">
     </bean>
 
-    <bean id = "myCoach" class = "com.lucas.springdemo.TrackCoach">
+    <bean id = "myCoach" class = "com.lucas.springdemo.TrackCoach" scope="prototype">
 
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortuneService" />
